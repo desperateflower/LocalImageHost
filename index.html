@@ -119,7 +119,7 @@
             return
         }
 
-        const Response = await fetch("/api/images?page=" + Page)
+        const Response = await fetch("/images?page=" + Page)
         const Data = await Response.json()
 
         PageCache[Page] = Data
