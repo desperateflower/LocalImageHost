@@ -39,7 +39,7 @@ function LoadImages() {
     })
 }
 
-Fastify.get("/api/images", async (Req, Reply) => {
+Fastify.get("/images", async (Req, Reply) => {
     const AllImages = LoadImages()
 
     const Page = Number(Req.query.page) || 1
